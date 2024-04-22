@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "fs": "^0.0.1-security",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}

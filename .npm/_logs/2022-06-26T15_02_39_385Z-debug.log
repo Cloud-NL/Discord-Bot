@@ -1,0 +1,72 @@
+0 verbose cli [
+0 verbose cli   '/usr/local/bin/node',
+0 verbose cli   '/usr/local/bin/npm',
+0 verbose cli   'install',
+0 verbose cli   '--production'
+0 verbose cli ]
+1 info using npm@7.20.3
+2 info using node@v16.6.1
+3 timing npm:load:whichnode Completed in 0ms
+4 timing config:load:defaults Completed in 1ms
+5 timing config:load:file:/usr/local/lib/node_modules/npm/npmrc Completed in 1ms
+6 timing config:load:builtin Completed in 1ms
+7 verbose config production Use `--omit=dev` instead.
+8 timing config:load:cli Completed in 2ms
+9 timing config:load:env Completed in 0ms
+10 timing config:load:project Completed in 2ms
+11 timing config:load:file:/home/container/.npmrc Completed in 0ms
+12 timing config:load:user Completed in 0ms
+13 timing config:load:file:/usr/local/etc/npmrc Completed in 0ms
+14 timing config:load:global Completed in 0ms
+15 timing config:load:validate Completed in 0ms
+16 timing config:load:credentials Completed in 1ms
+17 timing config:load:setEnvs Completed in 1ms
+18 timing config:load Completed in 8ms
+19 timing npm:load:configload Completed in 8ms
+20 timing npm:load:setTitle Completed in 0ms
+21 timing npm:load:setupLog Completed in 2ms
+22 timing npm:load:cleanupLog Completed in 2ms
+23 timing npm:load:configScope Completed in 0ms
+24 timing npm:load:projectScope Completed in 0ms
+25 timing npm:load Completed in 12ms
+26 timing config:load:flatten Completed in 2ms
+27 timing arborist:ctor Completed in 1ms
+28 timing idealTree:init Completed in 14ms
+29 timing idealTree:userRequests Completed in 0ms
+30 silly idealTree buildDeps
+31 timing idealTree:#root Completed in 0ms
+32 timing idealTree:buildDeps Completed in 15ms
+33 timing idealTree:fixDepFlags Completed in 0ms
+34 timing idealTree Completed in 30ms
+35 timing reify:loadTrees Completed in 32ms
+36 timing reify:diffTrees Completed in 0ms
+37 silly reify moves {}
+38 timing reify:retireShallow Completed in 0ms
+39 timing reify:createSparse Completed in 0ms
+40 timing reify:trashOmits Completed in 0ms
+41 timing reify:loadBundles Completed in 0ms
+42 silly audit report null
+43 timing reify:audit Completed in 0ms
+44 timing reify:unpack Completed in 0ms
+45 timing reify:unretire Completed in 0ms
+46 timing build:queue Completed in 0ms
+47 timing build:deps Completed in 1ms
+48 timing build Completed in 1ms
+49 timing reify:build Completed in 1ms
+50 timing reify:trash Completed in 0ms
+51 timing reify:save Completed in 3ms
+52 timing reify Completed in 58ms
+53 timing command:install Completed in 60ms
+54 verbose stack Error: ENOENT: no such file or directory, open '/home/container/package.json'
+55 verbose cwd /home/container
+56 verbose Linux 5.4.0-90-generic
+57 verbose argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--production"
+58 verbose node v16.6.1
+59 verbose npm  v7.20.3
+60 error code ENOENT
+61 error syscall open
+62 error path /home/container/package.json
+63 error errno -2
+64 error enoent ENOENT: no such file or directory, open '/home/container/package.json'
+65 error enoent This is related to npm not being able to find a file.
+66 verbose exit -2
